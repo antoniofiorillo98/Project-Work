@@ -1,0 +1,226 @@
+
+/* Inizio del body, che applica lo stile generale alla pagina */
+body {
+  /* Imposta il font di base per tutto il corpo della pagina */
+  font-family: 'Nunito', sans-serif;
+
+  /* Rimuove il margine e il padding di default per evitare spazi indesiderati */
+  margin: 0;
+  padding: 0;
+
+  /* Imposta il colore di sfondo della pagina */
+  background-color: #f4f9f4;
+
+  /* Imposta il colore del testo principale */
+  color: #2f4f2f;
+}
+
+/* Inizio dello stile per l'header (l'intestazione della pagina) */
+header {
+  /* Imposta l'immagine di sfondo per l'header */
+  background-image: url('https://architizer-prod.imgix.net/media/1460494732635pNOV_Basel_Courtyard_50014_crop.jpg?w=1680&q=60&auto=format,compress&cs=strip');
+  /* Adatta l'immagine di sfondo per coprire tutta l'area dell'header */
+  background-size: cover;
+  /* Centra l'immagine di sfondo nell'header */
+  background-position: center;
+
+  /* Aggiunge un padding interno per separare il contenuto dai bordi dell'header */
+  padding: 80px 20px;
+
+  /* Allinea il testo al centro */
+  text-align: center;
+
+  /* Imposta il colore del testo come bianco per contrastare con lo sfondo scuro */
+  color: white;
+}
+
+/* Stile per il titolo principale nell'header */
+header h1 {
+  /* Imposta la dimensione del font per il titolo */
+  font-size: 2.8em;
+
+  /* Aggiunge uno spazio sotto il titolo */
+  margin-bottom: 10px;
+}
+
+/* Stile per il paragrafo nell'header */
+header p {
+  /* Imposta la dimensione del font per il paragrafo */
+  font-size: 1.2em;
+
+  /* Limita la larghezza massima del paragrafo per migliorare la leggibilità */
+  max-width: 600px;
+
+  /* Allinea il paragrafo al centro */
+  margin: auto;
+}
+
+/* Stile per i singoli contenitori (container) all'interno della pagina */
+.container {
+  /* Aggiunge un padding interno per separare il contenuto dai bordi del contenitore */
+  padding: 40px 20px;
+
+  /* Imposta una larghezza massima per ogni contenitore */
+  max-width: 900px;
+
+  /* Allinea il contenitore al centro della pagina */
+  margin: auto;
+}
+
+/* Stile per il titolo all'interno di ogni contenitore */
+.container h2 {
+  /* Allinea il titolo al centro */
+  text-align: center;
+
+  /* Imposta un colore verde scuro per il titolo */
+  color: #356859;
+
+  /* Aggiunge uno spazio sotto il titolo per separarlo dal resto del contenuto */
+  margin-bottom: 40px;
+}
+
+/* Stile per ogni singolo report che appare nella pagina */
+.report {
+  /* Imposta uno sfondo bianco per ogni report */
+  background-color: white;
+
+  /* Aggiunge un padding interno per separare il contenuto dai bordi */
+  padding: 25px;
+
+  /* Applica bordi arrotondati agli angoli del report */
+  border-radius: 16px;
+
+  /* Aggiunge un'ombra leggera intorno al report */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+  /* Aggiunge uno spazio sotto il report */
+  margin-bottom: 30px;
+
+  /* Aggiunge una transizione per un effetto al passaggio del mouse */
+  transition: transform 0.2s;
+}
+
+/* Effetto hover per i report: sposta il report verso l'alto quando il mouse è sopra */
+.report:hover {
+  transform: translateY(-5px);
+}
+
+/* Stile per il titolo all'interno di ogni report */
+.report h3 {
+  /* Imposta un colore verde per il titolo */
+  color: #37966f;
+}
+
+/* Stile per il paragrafo all'interno di ogni report */
+.report p {
+  /* Aggiunge margini tra i paragrafi */
+  margin: 10px 0 20px;
+}
+
+/* Stile per i pulsanti di download */
+.download-btn {
+  /* Imposta il padding per creare uno spazio intorno al testo */
+  display: inline-block;
+  padding: 12px 20px;
+  /* Imposta il colore di sfondo del pulsante */
+  background-color: #37966f;
+  /* Imposta il colore del testo del pulsante */
+  color: white;
+  /* Rimuove la sottolineatura del link */
+  text-decoration: none;
+  /* Aggiunge bordi arrotondati al pulsante */
+  border-radius: 8px;
+  /* Imposta il testo in grassetto */
+  font-weight: bold;
+  /* Aggiunge una transizione per cambiare il colore di sfondo al passaggio del mouse */
+  transition: background-color 0.3s;
+}
+
+/* Effetto hover per il pulsante: cambia il colore di sfondo al passaggio del mouse*/
+.download-btn:hover {
+  background-color: #2a7a59;
+}
+
+/* Stile per il footer (piè di pagina) */
+footer {
+  /* Allinea il testo al centro */
+  text-align: center;
+
+  /* Aggiunge padding per creare spazio intorno al testo */
+  padding: 20px;
+
+  /* Imposta uno sfondo verde chiaro per il footer */
+  background-color: #e6f2e6;
+
+  /* Imposta una dimensione del font leggermente più piccola */
+  font-size: 0.95em;
+
+  /* Imposta il colore del testo nel footer */
+  color: #355e3b;
+}
+
+/* Stile per i link nel footer */
+footer a {
+  /* Imposta il colore del link */
+  color: #356859;
+
+  /* Rimuove la sottolineatura del link */
+  text-decoration: none;
+
+  /* Imposta il testo in grassetto */
+  font-weight: bold;
+}
+
+/* Effetto hover per i link nel footer: aggiunge una sottolineatura quando il mouse è sopra */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Stile per le sezioni che devono essere visualizzate come una griglia di due colonne */
+.sezioni {
+  /* Imposta il layout flexbox per la griglia di sezioni */
+  display: inline-flex;
+
+  /* Consente alle sezioni di andare su più righe, se necessario */
+  flex-wrap: wrap;
+
+  /* Aggiunge uno spazio tra le sezioni */
+  justify-content: space-between;
+  gap: 20px;
+
+  /* Aggiunge uno spazio sotto le sezioni */
+  margin-bottom: 40px;
+}
+
+/* Stile per la sezione 'ambiente' */
+.ambiente {
+  /* Imposta uno sfondo bianco per la sezione */
+  background-color: white;
+  padding: 25px; /* Aggiunge un padding interno per separare il contenuto dai bordi */
+  border-radius: 16px; /* Applica bordi arrotondati agli angoli della sezione */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Aggiunge un'ombra leggera intorno alla sezione */
+  margin-bottom: 30px; /* Aggiunge uno spazio sotto la sezione */
+  transition: transform 0.2s;   /* Aggiunge una transizione per l'effetto hover */
+  flex: 1 1 48%; /* Consente alla sezione di occupare il 48% della larghezza e di adattarsi a più righe */
+}
+
+/* Stile per la sezione 'salute' */
+.salute {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  transition: transform 0.2s;
+  flex: 1 1 48%;
+}
+
+/* Effetto hover per la sezione 'ambiente' */
+.ambiente:hover {
+  transform: translateY(-5px);
+}
+
+/* Effetto hover per la sezione 'salute' */
+.salute:hover {
+  transform: translateY(-5px);
+}
